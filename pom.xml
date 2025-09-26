@@ -288,6 +288,32 @@
                     <artifactId>spotless-maven-plugin</artifactId>
                     <version>${maven.spotless.plugin.version}</version>
                     <configuration>
+                        <markdown>
+                            <includes>
+                                <include>*.md</include>
+                                <include>docs/*.md</include>
+                                <include>docs/**/*.md</include>
+                            </includes>
+                            <flexmark></flexmark>
+                        </markdown>
+                        <yaml>
+                            <includes>
+                                <include>src/main/resources/*.yaml</include>
+                                <include>src/main/resources/*.yml</include>
+                            </includes>
+                            <jackson>
+                                <version>2.14.1</version>
+                                <features>
+                                    <INDENT_OUTPUT>true</INDENT_OUTPUT>
+                                    <ORDER_MAP_ENTRIES_BY_KEYS>false</ORDER_MAP_ENTRIES_BY_KEYS>
+                                </features>
+                                <yamlFeatures>
+                                    <WRITE_DOC_START_MARKER>true</WRITE_DOC_START_MARKER>
+                                    <MINIMIZE_QUOTES>false</MINIMIZE_QUOTES>
+                                </yamlFeatures>
+                                <spaceBeforeSeparator>false</spaceBeforeSeparator>
+                            </jackson>
+                        </yaml>
                         <formats>
                             <format>
                                 <includes>
@@ -487,6 +513,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.cyclonedx</groupId>
+                <artifactId>cyclonedx-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.graalvm.buildtools</groupId>

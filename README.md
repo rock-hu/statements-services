@@ -1,11 +1,18 @@
 # statements-services
 
+📚 Getting Started
+
 ## maven
 
 ```bash
 
 mvn spotless:apply
 ```
+
+🤝 Contribution
+
+![Alt](https://repobeats.axiom.co/api/embed/26ca811156510fc998e9e0d0e91c734c91fb9650.svg "Repobeats analytics image")
+
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=rock-hu_statements-services)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=rock-hu_statements-services&metric=bugs)](https://sonarcloud.io/summary/new_code?id=rock-hu_statements-services)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=rock-hu_statements-services&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=rock-hu_statements-services)
