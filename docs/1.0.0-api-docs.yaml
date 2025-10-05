@@ -339,7 +339,5 @@ paths:
                 format: binary
 components:
   schemas:
-    OBReadStatement2:
-      type: object
-    OBReadTransaction6:
-      type: object
+    OBReadStatement2: {}
+    OBReadTransaction6: {}
